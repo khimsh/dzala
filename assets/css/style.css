@@ -121,7 +121,7 @@ body {
 }
 
 .container {
-  width: 1312px;
+  width: 1306px;
   margin-inline: auto;
 }
 
@@ -472,7 +472,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.8) 30%, transparent 40%);
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 69%, transparent 40%);
 }
 .header.sticky {
   position: sticky;
