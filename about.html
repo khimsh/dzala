@@ -229,12 +229,10 @@
       const observer = new window.IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            console.log('yay')
             contactLink.classList.add('active')
             aboutUsLink.classList.remove('active')
             return
           } else {
-            console.log('nay')
             contactLink.classList.remove('active')
             aboutUsLink.classList.add('active')
           }
