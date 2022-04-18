@@ -205,14 +205,15 @@ body {
   }
 
   &__text {
-    margin-bottom: 34px;
     font-size: 18px;
     color: #fff;
+    font-weight: 700;
+    text-align: center;
   }
 
   article {
     position: relative;
-    margin-top: 34px;
+    margin-top: 20px;
     padding: 26px 30px 42px;
     background-color: #fff4df;
     box-shadow: 10px 10px 8px rgb(0 0 0 / 0.34);
