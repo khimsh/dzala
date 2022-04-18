@@ -1,0 +1,588 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --ff-firago: "FiraGO", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --ff-helvetica: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-helvetica);
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.container {
+  width: 1312px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 225px auto 225px;
+}
+
+.home {
+  margin-top: 31px;
+}
+.home__main {
+  background-color: #dfdfdf;
+}
+.home__main h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #ff0000;
+  margin-top: 54px;
+  margin-left: 51px;
+}
+.home__main p {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.home__main div {
+  margin-top: 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+}
+.home .badge-new {
+  margin-left: auto;
+  transform: rotate(-15deg) translateY(-10px);
+  width: 92px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #f1811f;
+  border-radius: 11px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+.home__teal {
+  margin-top: 20px;
+  margin-bottom: 14px;
+  padding-left: 21px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1996a9;
+}
+.home__red {
+  margin-top: 26px;
+  padding-left: 21px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ff0000;
+}
+
+.mission__main {
+  padding-top: 52px;
+  color: #fff;
+  text-align: center;
+}
+.mission__main h2 {
+  margin-bottom: 46px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.mission__main p {
+  font-size: 27px;
+  font-weight: 700;
+  width: 741px;
+  margin-inline: auto;
+}
+.mission__main p:first-of-type {
+  margin-bottom: 40px;
+}
+.mission__teal {
+  background-color: #1996a9;
+}
+
+.what-we-do {
+  padding-top: 70px;
+  scroll-margin-top: 100px;
+}
+.what-we-do__main {
+  background-color: #dfdfdf;
+  padding-inline: 40px;
+  padding-block: 22px 80px;
+}
+.what-we-do__main h2 {
+  margin-bottom: 28px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+.what-we-do__main h3 {
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsla(188deg, 74%, 38%, 0.7);
+}
+.what-we-do__main h3 span {
+  font-family: Wingdings;
+  font-size: 24px;
+  color: #ff0000;
+}
+.what-we-do__main p {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.what-we-do__main p + h3 {
+  margin-top: 36px;
+}
+
+.science {
+  margin-top: 31px;
+}
+.science__main {
+  padding-block: 13px 64px;
+  padding-inline: 31px;
+  background-color: #1996a9;
+}
+.science__main h1 {
+  margin-bottom: 17px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.science__main h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.science__main h2 span {
+  font-family: Wingdings;
+  font-size: 24px;
+  color: #ff0000;
+}
+.science__lead {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.science__text {
+  margin-bottom: 34px;
+  font-size: 18px;
+  color: #fff;
+}
+.science article {
+  position: relative;
+  margin-top: 34px;
+  padding: 26px 30px 42px;
+  background-color: #fff4df;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.34);
+}
+.science article h3 {
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.science article p {
+  font-size: 15px;
+}
+.science article p:not(:first-child) {
+  margin-top: 18px;
+}
+.science article div {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+}
+.science__aside {
+  background-color: #dfdfdf;
+  padding: 19px 20px;
+}
+.science__aside figcaption {
+  font-size: 12px;
+}
+.science__figure img {
+  margin-bottom: 14.5px;
+}
+.science__figure--2 {
+  margin-top: 180px;
+}
+.science__figure--2 figcaption {
+  font-weight: 700;
+}
+.science__figure--3 {
+  margin-top: 135px;
+  border: 2px solid #1996a9;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.16);
+  height: 147px;
+  width: 100%;
+}
+.science__figure--3 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.science__footnote {
+  margin-top: 46px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.science__footnote a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-us {
+  margin-top: 31px;
+}
+.about-us__main {
+  padding-top: 13px;
+  padding-inline: 32px;
+  color: #fff;
+  background-color: #1996a9;
+}
+.about-us__main h2 {
+  margin-bottom: 17px;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+.about-us__lead {
+  font-size: 18px;
+  margin-bottom: 29px;
+}
+.about-us__aside {
+  padding: 20px;
+  padding-bottom: 222px;
+  background-color: #dfdfdf;
+  display: flex;
+  align-items: flex-end;
+}
+.about-us__aside img {
+  margin-bottom: 14px;
+}
+.about-us__aside p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 42px;
+}
+.partners figcaption {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.partners p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.contact {
+  padding-top: 70px;
+  scroll-margin-top: 100px;
+}
+.contact__wrapper {
+  padding-block: 13px 24px;
+  padding-inline: 32px;
+  width: 862px;
+  margin-inline: auto;
+  background-color: #1996a9;
+  border: 1px solid #ffffff;
+}
+.contact__wrapper h2 {
+  margin-bottom: 19px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.contact__wrapper p {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.contact__wrapper p a {
+  color: inherit;
+  text-decoration: none;
+}
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  border: 2px solid #ffffff;
+  font-size: 15px;
+  color: #fff;
+  background-color: #1996a9;
+}
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  font-size: 15px;
+  color: #fff;
+  font-family: inherit;
+}
+.contact__form input {
+  padding-inline: 10px;
+  height: 31px;
+  margin-bottom: 19px;
+}
+.contact__form textarea {
+  padding: 10px;
+  margin-bottom: 24px;
+  height: 142px;
+}
+.contact__form button {
+  display: block;
+  margin-inline: auto;
+  width: 160px;
+  height: 32px;
+  color: #1996a9;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #fff;
+  border: none;
+}
+.contact .form-group {
+  gap: 24px;
+  display: flex;
+}
+
+.header {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.8) 30%, transparent 40%);
+}
+.header.sticky {
+  position: sticky;
+  top: 0;
+}
+.header__banner {
+  display: grid;
+}
+.header__banner img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.header__banner p {
+  font-size: 27px;
+  font-weight: 700;
+  color: #ffffff;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 802px;
+  margin-inline: auto;
+}
+.header__nav .container {
+  position: relative;
+}
+
+.lang {
+  position: absolute;
+  top: 7px;
+  right: -61px;
+}
+
+.nav {
+  margin-top: -35px;
+}
+.nav__list {
+  width: 783px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.nav__item {
+  flex: 1 0 auto;
+}
+.nav__link {
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-image: linear-gradient(to bottom, hsla(210deg, 1%, 63%, 0.56), hsla(0deg, 0%, 78%, 0.45), hsla(0deg, 0%, 87%, 0.39), hsla(0deg, 0%, 90%, 0.37));
+  border-radius: 0 0 10px 10px;
+}
+.nav__link:hover, .nav__link.active {
+  color: #fff;
+  background-image: linear-gradient(to bottom, #1a5467, #1996a9 30%);
+}
+
+.footer {
+  margin-top: 26px;
+  color: #ffffff;
+  background-color: #000000;
+}
+.footer__container {
+  width: 862px;
+  margin-inline: auto;
+}
+.footer__news {
+  margin-bottom: 10px;
+  height: 52px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+  background-color: #f1811f;
+  text-align: center;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__nav a {
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer address {
+  font-style: normal;
+  text-align: right;
+}
+.footer address p,
+.footer address a {
+  font-size: 18px;
+  font-weight: 700;
+  color: inherit;
+}
+.footer address a {
+  text-decoration: none;
+}
+.footer__copy {
+  margin-top: 30px;
+  padding-bottom: 12px;
+}
+.footer__copy p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

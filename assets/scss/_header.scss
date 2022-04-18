@@ -1,0 +1,45 @@
+.header {
+  background-image: linear-gradient(to bottom, rgb(255 255 255) 30%, rgba(255, 255, 255, 0.8) 30%, transparent 40%);
+
+  &.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  &__banner {
+    display: grid;
+
+    img {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    p {
+      font-size: 27px;
+      font-weight: 700;
+      color: #ffffff;
+
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
+      height: 100%;
+      display: flex;
+      align-items: center;
+      // margin-left: calc((100% - 802px) / 2);
+      width: 802px;
+      margin-inline: auto;
+    }
+  }
+
+  &__nav {
+    .container {
+      position: relative;
+    }
+  }
+}
+
+.lang {
+  position: absolute;
+  top: 7px;
+  right: -61px;
+}
